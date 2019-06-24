@@ -4,6 +4,9 @@ import json
 
 content = input('请输入需要翻译的内容：')
 url = 'http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule'
+
+head = {}
+head['User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36f'
 data = {}
 data['i']=content
 data['from']= 'AUTO'
